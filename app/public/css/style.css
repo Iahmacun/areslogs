@@ -1,0 +1,631 @@
+
+body {
+    background-color: #585656; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #585656; 
+    border-radius: 8px; 
+}
+
+/* Navigation Bar */
+
+#mainNavBar {
+    background: #444; 
+    font-size: 1.2rem; 
+    font-weight: 300;
+    color: white;
+    border-bottom: 1px solid #222; 
+    margin-bottom: 20px;
+    padding: 10px 0; 
+    z-index: 10;
+}
+
+.websiteLogo {
+    width: auto;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.navbar-brand {
+    float: left;
+}
+
+.navbar-brand .special-nav-link {
+    color: white;
+    font-size: 1.8rem; 
+    margin: 0;
+}
+
+.navbar-brand .special-nav-link:hover {
+    color: #f57f00; 
+    text-decoration: none;
+}
+
+#navLinks {
+    float: right;
+}
+
+#navLinks .navbar-nav {
+    text-align: right;
+    color: #ddd; 
+    display: block;
+}
+
+#navLinks .nav-link {
+    color: #ddd; 
+    font-size: 1.2rem; 
+}
+
+#navLinks .nav-link:hover {
+    color: #f57f00; 
+    text-decoration: none;
+}
+
+.navbarUsername {
+    color: white;
+    font-weight: light;
+}
+
+/* Footer */
+
+/* İçerik bölgesi */
+content {
+    padding-bottom: 50px; 
+}
+
+/* Footer */
+footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px 0; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+}
+.fa {
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    color: #f57f00; 
+}
+
+.fa-github:hover {
+    color: #ddd; 
+}
+
+/* Initial Index Page */
+
+.initialStage {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.userStuff {
+    text-align: center;
+    padding: 5px;
+}
+
+.userStuff a {
+    color: #f57f00; 
+}
+
+.userStuff a:hover {
+    color: #333; 
+    text-decoration: none;
+}
+
+/* Genel stil */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col-auto {
+    flex: 1 1 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Gün kartları */
+.card {
+    background-color: #303030; 
+    border: 1px solid #333; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    color: #cd9d2d;
+}
+
+/* Card butonları */
+.card-link {
+    display: block;
+    text-decoration: none; 
+    color: #512c0a;
+    background-color: #97651a; 
+    padding: 15px 25px; 
+    margin: 10px; 
+    border-radius: 5px; 
+    font-size: 18px; 
+    text-align: center; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Card butonuna tıklama (aktif) durumu */
+.card-link:active,
+.card-link:focus {
+    background-color: #252424; 
+    color: #212020; 
+    outline: none; 
+}
+
+/* Card buton üzerine gelme (hover) durumu */
+.card-link:hover {
+    background-color: #363333; 
+    color: #212121; 
+}
+.card-body {
+    color: #fff; 
+    text-align: center; 
+    font-size: 1.2em; 
+}
+/* Gün kartları hover efekti */
+.card:hover {
+    background-color: #5f5e5d; 
+}
+
+/* Butonlar */
+button {
+    background-color: #be5108; 
+    border: none;
+    color: #fff; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 1em; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #bc4d04; 
+}
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+    .col-auto {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}
+
+.error {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.authenticationForm {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.authenticationForm br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 60%;
+}
+
+.authenticationForm label {
+    color: #333; 
+    margin: 0;
+}
+
+.authenticationForm input {
+    width: 100%;
+    margin: 0;
+    border: 1px solid #d97203; 
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.authenticationForm input::placeholder {
+    text-align: center;
+}
+
+.authenticationForm input[type="submit"] {
+    background-color: #d87103; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.temporaryFormDisplay {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f57f00; 
+}
+
+.exerciseForm {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.512);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exerciseForm br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 60%;
+}
+
+.exerciseForm label {
+    color: #333; 
+    margin: 0;
+}
+
+.exerciseForm input {
+    width: 100%;
+    margin: 0;
+    border: 1px solid #d67003; 
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.exerciseForm input::placeholder {
+    text-align: center;
+}
+
+.exerciseForm input[type="submit"] {
+    background-color: #cd6a00; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.specialDay {
+    padding: 20px;
+    background-color: #535353b5; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.dayTable {
+    overflow-x: auto; 
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff57; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd; 
+}
+
+th {
+    background-color: #dd5b04; 
+    color: #fff; 
+}
+
+td {
+    background-color: #fff; 
+}
+
+.buttonCell, .dayButtonContainer, .specialButtonContainer {
+    text-align: center;
+    padding: 20px 0; 
+}
+
+button {
+    background-color: #ce5402; 
+    color: #fff; 
+    border: none;
+    border-radius: 8px; 
+    padding: 15px 30px; 
+    cursor: pointer;
+    font-size: 18px; 
+    transition: background-color 0.3s, transform 0.2s; 
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #923b01;
+    transform: scale(1.05); 
+}
+
+
+
+.errorPage {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.genericError, .indexLink {
+    text-align: center;
+    padding: 5px;
+}
+
+.indexLink a {
+    color: #c16400; /* orange */
+}
+
+.indexLink a:hover {
+    color: #333; /* dark gray */
+    text-decoration: none;
+}
+
+/* Exercise Database */
+
+.databaseContainer {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.temporaryExercisesDisplay {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d46f03; /* orange */
+}
+
+.exercisesDisclaimer {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.exercisesDisclaimer a {
+    color: #c66703; /* orange */
+}
+
+.exercisesDisclaimer a:hover {
+    color: #333; /* dark gray */
+    text-decoration: none;
+}
+
+.selectionContainer {
+    display: none;
+}
+
+.buttonContainer {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+.buttonContainer input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #c76701; /* orange */
+    border-radius: 4px;
+}
+
+.buttonContainer input::placeholder {
+    text-align: center;
+}
+
+.filterContainer {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.filterContainer input {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #c06402; /* orange */
+    color: white;
+    border: 1px solid #ddd; /* light gray */
+    border-radius: 4px;
+}
+
+.exercisesTable {
+    table-layout: fixed;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    font-size: 1rem; /* Increase font size */
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.exercisesTable td, .exercisesTable th, .exercisesTable .buttonCell {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd; /* light gray */
+    overflow: hidden;
+}
+
+.exercisesTable ul {
+    list-style-type: none;
+}
+/* Temel Ayarlar */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    #mainNavBar {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand .special-nav-link {
+        font-size: 1.4rem;
+    }
+
+    #navLinks .nav-link {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .websiteLogo {
+        height: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px) {
+    .authenticationForm, .exerciseForm {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .authenticationForm input, .exerciseForm input {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .dayTable {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .dayTable td, .dayTable th {
+        padding: 15px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .buttonContainer input, .dayButtonContainer button, .specialButtonContainer button {
+        font-size: 1rem;
+        padding: 15px;
+        width: 100%;
+    }
+}
+/* Temel Ayarlar */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Viewport Meta Tag */
+@media (max-width: 768px) {
+    #mainNavBar {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand .special-nav-link {
+        font-size: 1.4rem;
+    }
+
+    #navLinks .nav-link {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .websiteLogo {
+        height: 150px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1.2rem;
+    }
+
+    .authenticationForm, .exerciseForm {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .authenticationForm input, .exerciseForm input {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .dayTable {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .dayTable td, .dayTable th {
+        padding: 15px;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .buttonContainer input, .dayButtonContainer button, .specialButtonContainer button {
+        font-size: 1rem;
+        padding: 15px;
+        width: 100%;
+    }
+    .row {
+        flex-direction: column; 
+    }
+
+    .col-auto {
+        flex: 1 1 100%; 
+        max-width: 100%; 
+    }
+}

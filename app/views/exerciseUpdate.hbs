@@ -1,0 +1,47 @@
+<script defer src="/javascripts/exerciseListGenerator.js"></script>
+
+<div class="temporaryFormDisplay">EGZERSİZ LİSTESİ YÜKLENİYOR</div>
+
+<div class="exerciseForm">
+	<form method="POST" action="/editexercise/{{ exercise }}">
+		<div>
+			<label for="exerciseName">EGZERSİZ ADI</label>
+
+			<input type="text" required name="exerciseName" placeholder="Gerekli" list="exercisesEntryList" value="{{ name }}">
+
+			<datalist id="exercisesEntryList"></datalist>
+		</div>
+
+		<br>
+
+		<div>
+			<label for="exerciseWeight">EGZERSİZ AĞIRLIĞI (KG)</label>
+
+			<input type="number" min="0" value="{{ weight }}" placeholder="Gerekli - 0.01 Adım" step="0.01" required name="exerciseWeight">
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="exerciseSets">SET SAYISI</label>
+
+			<input type="number" min="0" value="{{ sets }}" placeholder="Gerekli" required name="exerciseSets">
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="exerciseReps">TEKRAR SAYISI</label>
+
+			<input type="number" min="0" value="{{ reps }}" placeholder="Gerekli" required name="exerciseReps">
+		</div>
+
+		<br>
+
+		<input type="hidden" name="identifier" value="{{ id }}">
+
+		<div>
+			<input type="submit" value="EGZERSİZİ GÜNCELLE">
+		</div>
+	</form>
+</div>

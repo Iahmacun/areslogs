@@ -1,0 +1,37 @@
+{{#if error}}
+    <div class="alert alert-danger error">
+        <strong>{{ error }}</strong>
+    </div>
+{{/if}}
+
+<div class="authenticationForm">
+    <form method="POST" action="/register">
+        <div>
+            <label for="username">KULLANICI ADI</label>
+
+            <input type="text" required name="username" value="" minlength="8" placeholder="Gerekli - 8+ Karakter">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">E-POSTA</label>
+
+            <input type="email" required name="email" value="" placeholder="Gerekli">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">ŞİFRE</label>
+
+            <input type="password" required name="password" value="" minlength="8" placeholder="Gerekli - 8+ Karakter">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" value="KAYIT OL">
+        </div>
+    </form>
+</div>

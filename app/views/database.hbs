@@ -1,0 +1,27 @@
+<script defer src="/javascripts/database.js"></script>
+
+<div class="exercisesDisclaimer">
+    VERİ KAYNAĞI: <a href="https://wger.de/en/software/api" target="_blank">Kayacı Antrenman Yöneticisi</a>
+</div>
+
+<div class="temporaryExercisesDisplay">VERİTABANI YÜKLENİYOR</div>
+
+<div class="selectionContainer">
+    <div class="buttonContainer">
+        <div class="muscleContainer">
+            <input type="text" name="muscleFilter" id="muscleFilter" placeholder="KAS GRUBUNU SEÇİN" list="musclesList">
+            <datalist id="musclesList"></datalist>
+        </div>
+
+        <div class="equipmentContainer">
+            <input type="text" name="equipmentFilter" id="equipmentFilter" placeholder="EKİPMAN SEÇİN (&quot;NONE&quot; FOR NOTHING)" list="equipmentList">
+            <datalist id="equipmentList"></datalist>
+        </div>
+    </div>
+
+    <div class="filterContainer">
+        <input class="filterButton" type="submit" value="FILTRE">
+    </div>
+</div>
+
+<div class="databaseContainer"></div>

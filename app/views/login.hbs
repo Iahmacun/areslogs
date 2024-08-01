@@ -1,0 +1,29 @@
+{{#if error}}
+    <div class="alert alert-danger error">
+        <strong>{{ error }}</strong>
+    </div>
+{{/if}}
+
+<div class="authenticationForm">
+    <form method="POST" action="/login">
+        <div>
+            <label for="username">KULLANICI ADI</label>
+
+            <input type="text" required name="username" value="" placeholder="Gerekli">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">ŞİFRE</label>
+
+            <input type="password" required name="password" value="" placeholder="Gerekli">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" value="GİRİŞ YAP">
+        </div>
+    </form>
+</div>
